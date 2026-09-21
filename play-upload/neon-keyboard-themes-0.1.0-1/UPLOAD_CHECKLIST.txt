@@ -1,0 +1,25 @@
+Neon Keyboard Themes — Play Internal testing upload
+Package: dev.neonkeyboard.app
+versionName=0.1.0  versionCode=1
+
+Files in this folder:
+  neon-keyboard-themes-0.1.0-1.aab
+  RELEASE_NOTES.md (if present)
+  UPLOAD_CHECKLIST.txt
+
+Play Console steps:
+  1. Release → Testing → Internal testing → Create release
+  2. Upload neon-keyboard-themes-0.1.0-1.aab
+  3. Paste release notes from RELEASE_NOTES.md
+  4. Privacy policy: https://neonkeyboard.app/legal/privacy
+  5. Complete Data safety (docs/store/DATA_SAFETY.md)
+  6. IME declaration (docs/store/IME_DECLARATION.md)
+  7. Subscriptions neon_vip_* + license testers
+
+Automated checks before upload:
+  ./scripts/play_internal_testing_checklist.sh
+  ./scripts/verify_legal_urls_live.sh --strict   # after HTTPS deploy
+  ./scripts/verify_keystore_config.sh --strict   # production signing
+
+Fastlane (optional, service account required):
+  bundle exec fastlane android internal

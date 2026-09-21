@@ -1,0 +1,34 @@
+Neon Keyboard Themes — Play Internal testing upload
+Package: dev.neonkeyboard.app
+versionName=0.2.0  versionCode=2
+
+Files in this folder:
+  neon-keyboard-themes-0.2.0-2.aab
+  neon-keyboard-themes-0.2.0-2.aab.sha256
+  RELEASE_NOTES.md (if present)
+  WHATS_NEW_en-US.txt / WHATS_NEW_ru-RU.txt (Play release notes)
+  MANIFEST.json
+  UPLOAD_CHECKLIST.txt
+
+Play Console guide: docs/store/PLAY_CONSOLE_FIRST_UPLOAD.md
+
+Play Console steps:
+  1. Release → Testing → Internal testing → Create release
+  2. Upload neon-keyboard-themes-0.2.0-2.aab
+  3. Paste release notes from RELEASE_NOTES.md
+  4. Privacy policy: https://neonkeyboard.app/legal/privacy
+  5. Complete Data safety (docs/store/DATA_SAFETY.md)
+  6. IME declaration (docs/store/IME_DECLARATION.md)
+  7. Subscriptions neon_vip_* + license testers
+
+Changelogs (Play "What's new"):
+  fastlane/metadata/android/en-US/changelogs/
+  fastlane/metadata/android/ru-RU/changelogs/
+  Regenerate: ./scripts/generate_release_notes.sh --write
+
+Automated checks before upload:
+  ./scripts/pre_upload_gate.sh
+  ./scripts/pre_upload_gate.sh --require-legal   # after HTTPS deploy
+
+Fastlane (optional, service account required):
+  bundle exec fastlane android internal

@@ -1,0 +1,11 @@
+{
+  "package": "dev.neonkeyboard.app",
+  "versionName": "0.2.0",
+  "versionCode": 2,
+  "aab": "neon-keyboard-themes-0.2.0-2.aab",
+  "sha256": "95054531e01af1d7c19029b9e3eccc8121e01f06a545307e4359c039788501fb",
+  "whatsNewEn": "WHATS_NEW_en-US.txt",
+  "whatsNewRu": "WHATS_NEW_ru-RU.txt",
+  "uploadGuide": "docs/store/PLAY_CONSOLE_FIRST_UPLOAD.md",
+  "preUploadGate": "./scripts/pre_upload_gate.sh"
+}
